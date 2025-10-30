@@ -1,0 +1,22 @@
+# GitHub Pages Configuration
+# This file tells GitHub Pages not to process files through Jekyll
+
+# Site settings
+title: SCIPE Workshop on LLMs
+description: A comprehensive three-day workshop exploring the foundations, applications, and cutting-edge research in Large Language Models
+url: https://oh-scipe.github.io
+baseurl: /llm-workshop26
+
+# Build settings
+markdown: kramdown
+exclude:
+  - prompt.md
+  - README.md
+  - .gitignore
+
+# SEO settings
+lang: en
+author: SCIPE Workshop Committee
+
+# Google Analytics (add your tracking ID if needed)
+# google_analytics: UA-XXXXXXXX-X

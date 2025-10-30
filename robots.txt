@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://oh-scipe.github.io/llm-workshop26/sitemap.xml
