@@ -86,6 +86,21 @@ body {
     color: var(--primary-color);
 }
 
+.nav-menu a.active {
+    color: var(--primary-color);
+    position: relative;
+}
+
+.nav-menu a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
 .nav-menu .btn-register {
     background-color: var(--primary-color);
     color: white;
@@ -437,6 +452,59 @@ body {
     color: var(--primary-color);
 }
 
+/* Getting Ready Page Styles */
+.resource-item.featured {
+    border-left-color: var(--primary-color);
+    border-left-width: 6px;
+    background: linear-gradient(to right, rgba(74, 144, 226, 0.05), transparent);
+}
+
+.resource-badge {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.75rem;
+}
+
+.resource-item.advanced .resource-badge {
+    background-color: var(--secondary-color);
+}
+
+.resource-author {
+    font-weight: 600;
+    color: var(--accent-color);
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.resources-alt {
+    background-color: var(--bg-primary);
+}
+
+.subsection-title {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.subsection-title:first-of-type {
+    margin-top: 1rem;
+}
+
+.courses-section {
+    margin-top: 2rem;
+}
+
 /* Logistics Section */
 .logistics-grid {
     display: grid;
@@ -528,13 +596,16 @@ body {
     height: 60px;
     width: auto;
     object-fit: contain;
-    filter: brightness(0) invert(1);
-    opacity: 0.9;
-    transition: opacity 0.2s ease;
+    opacity: 0.95;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 4px;
 }
 
 .partner-logo:hover {
     opacity: 1;
+    transform: translateY(-2px);
 }
 
 .footer-info p {
