@@ -64,98 +64,236 @@
         </div>
     </section>
 
-    <!-- Introduction to LLMs Section -->
+    <!-- Filter Section -->
     <section class="section resources">
         <div class="container">
-            <h2 class="section-title">Introduction to Large Language Models</h2>
+            <div class="filter-section">
+                <h3 class="filter-title">Filter by Difficulty Level</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="beginner">Beginner</button>
+                    <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+                    <button class="filter-btn" data-filter="advanced">Advanced</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction to LLMs & Tutorials Section -->
+    <section class="section resources">
+        <div class="container">
+            <h2 class="section-title">Introduction to LLMs & Tutorials</h2>
             <p class="section-intro">Start here to build a strong foundation in LLMs</p>
             
             <div class="resource-list">
-                <div class="resource-item featured">
+                <div class="resource-item featured" data-level="beginner">
                     <div class="resource-badge">Recommended First</div>
-                    <h4>Introduction to Large Language Models (1 hour)</h4>
+                    <div class="resource-badge-level">Beginner</div>
+                    <h4>Intro to Large Language Models</h4>
                     <p class="resource-author">Andrej Karpathy</p>
                     <p>An excellent starting point that covers the fundamentals of LLM architecture, training, and applications. Andrej Karpathy's clear explanations make complex concepts accessible to newcomers while providing valuable insights for experienced practitioners.</p>
                     <a href="https://youtu.be/zjkBMFhNj_g?si=WEaJjnjJdnbwgKx0" target="_blank" rel="noopener noreferrer">Watch Video</a>
                 </div>
 
-                <div class="resource-item">
+                <div class="resource-item" data-level="beginner">
+                    <div class="resource-badge-level">Beginner</div>
                     <h4>How I Use LLMs</h4>
                     <p class="resource-author">Andrej Karpathy</p>
                     <p>Practical insights on leveraging LLMs in real-world workflows. Learn how an expert integrates these tools into daily work and discovers what's possible with current technology.</p>
                     <a href="https://youtu.be/EWvNQjAaOHw?si=6sB2JJMOx4QxsE4Q" target="_blank" rel="noopener noreferrer">Watch Video</a>
                 </div>
 
-                <div class="resource-item">
+                <div class="resource-item" data-level="beginner">
+                    <div class="resource-badge-level">Beginner</div>
                     <h4>Large Language Models and Chatbots</h4>
                     <p class="resource-author">IBM Technology</p>
                     <p>A comprehensive playlist that covers LLM fundamentals and chatbot development. These videos break down complex topics into digestible segments, perfect for building understanding step by step.</p>
                     <a href="https://www.youtube.com/playlist?list=PLOspHqNVtKAAsiohuZj1Bt4XpA3_bkS3c" target="_blank" rel="noopener noreferrer">View Playlist</a>
                 </div>
 
-                <div class="resource-item">
+                <div class="resource-item" data-level="intermediate">
+                    <div class="resource-badge-level">Intermediate</div>
+                    <h4>Let's Reproduce GPT-2 (124M)</h4>
+                    <p class="resource-author">Andrej Karpathy</p>
+                    <p>An in-depth walkthrough of implementing GPT-2 from scratch. This is for those who want to understand the intricate details of transformer architecture and training. Highly rewarding for research-oriented participants.</p>
+                    <a href="https://youtu.be/l8pRSuU81PU?si=PWySE_LphU9OcpQC" target="_blank" rel="noopener noreferrer">Watch Video</a>
+                </div>
+
+                <div class="resource-item" data-level="beginner">
+                    <div class="resource-badge-level">Beginner</div>
+                    <h4>Learn RAG From Scratch</h4>
+                    <p class="resource-author">LangChain</p>
+                    <p>Python AI tutorial on building retrieval-augmented generation systems. This practical guide shows you how to enhance LLMs with external knowledge, a technique we'll explore in the workshop.</p>
+                    <a href="https://www.youtube.com/watch?v=sVcwVQRHIc8&t=228s" target="_blank" rel="noopener noreferrer">Watch Tutorial</a>
+                </div>
+
+                <div class="resource-item" data-level="beginner">
+                    <div class="resource-badge-level">Beginner</div>
                     <h4>Neural Networks</h4>
                     <p class="resource-author">3Blue1Brown</p>
                     <p>Beautiful visual explanations of neural network concepts. If you're looking to understand the mathematical foundations with intuitive animations, this series is unmatched. Essential for grasping how neural networks actually work.</p>
                     <a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi" target="_blank" rel="noopener noreferrer">View Playlist</a>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="resource-item">
-                    <h4>Learn RAG From Scratch</h4>
-                    <p class="resource-author">LangChain Engineer</p>
-                    <p>Python AI tutorial on building retrieval-augmented generation systems. This practical guide shows you how to enhance LLMs with external knowledge, a technique we'll explore in the workshop.</p>
-                    <a href="https://www.youtube.com/watch?v=sVcwVQRHIc8&t=228s" target="_blank" rel="noopener noreferrer">Watch Tutorial</a>
+    <!-- Generative AI & Language Models Courses Section -->
+    <section class="section resources-alt">
+        <div class="container">
+            <h2 class="section-title">Generative AI & Language Models Courses</h2>
+            <p class="section-intro">Comprehensive university courses on LLMs and transformers</p>
+            
+            <div class="resource-list">
+                <div class="resource-item" data-level="beginner">
+                    <div class="resource-badge-level">Beginner</div>
+                    <h4>Transformers & Large Language Models (CME 295)</h4>
+                    <p class="resource-author">Stanford University, 2025</p>
+                    <p>A comprehensive course dedicated to transformer architectures and large language models. Covers both theoretical foundations and practical implementations, ideal for understanding the complete picture of modern LLMs.</p>
+                    <a href="https://www.youtube.com/playlist?list=PLoROMvodv4rOCXd21gf0CF4xr35yINeOy" target="_blank" rel="noopener noreferrer">View Playlist</a> | 
+                    <a href="https://cme295.stanford.edu/" target="_blank" rel="noopener noreferrer">Course Page</a>
                 </div>
 
-                <div class="resource-item advanced">
-                    <div class="resource-badge">Advanced</div>
-                    <h4>Let's Reproduce GPT-2 (124M)</h4>
-                    <p class="resource-author">Andrej Karpathy</p>
-                    <p>An in-depth walkthrough of implementing GPT-2 from scratch. This is for those who want to understand the intricate details of transformer architecture and training. Consider this optional but highly rewarding for research-oriented participants.</p>
-                    <a href="https://youtu.be/l8pRSuU81PU?si=PWySE_LphU9OcpQC" target="_blank" rel="noopener noreferrer">Watch Video</a>
+                <div class="resource-item" data-level="intermediate">
+                    <div class="resource-badge-level">Intermediate</div>
+                    <h4>Language Modeling from Scratch (CS336)</h4>
+                    <p class="resource-author">Stanford University, 2025</p>
+                    <p>Build language models from the ground up. This course provides deep understanding of how transformers and language models work at a fundamental level.</p>
+                    <a href="https://www.youtube.com/playlist?list=PLoROMvodv4rOY23Y0BoGoBGgQ1zmU_MT_" target="_blank" rel="noopener noreferrer">View Playlist</a> | 
+                    <a href="https://stanford-cs336.github.io/spring2025/" target="_blank" rel="noopener noreferrer">Course Page</a>
+                </div>
+
+                <div class="resource-item" data-level="intermediate">
+                    <div class="resource-badge-level">Intermediate</div>
+                    <h4>Deep Reinforcement Learning (CS224R)</h4>
+                    <p class="resource-author">Stanford University, 2025</p>
+                    <p>Explore deep reinforcement learning techniques that are increasingly important for training and fine-tuning LLMs with human feedback.</p>
+                    <a href="https://www.youtube.com/watch?v=EvHRQhMX7_w" target="_blank" rel="noopener noreferrer">First Lecture</a> | 
+                    <a href="https://cs224r.stanford.edu/" target="_blank" rel="noopener noreferrer">Course Page</a>
+                </div>
+
+                <div class="resource-item" data-level="advanced">
+                    <div class="resource-badge-level">Advanced</div>
+                    <h4>Advanced Natural Language Processing (CS11-747)</h4>
+                    <p class="resource-author">Carnegie Mellon University, Fall 2025</p>
+                    <p>Dive deeper into NLP with this advanced course. Features video lectures covering cutting-edge topics in natural language processing. Great for those who want to explore beyond the basics.</p>
+                    <a href="https://www.youtube.com/playlist?list=PLqC25OT8ZpD2-RuhyacIsODl5iJVgMjI3" target="_blank" rel="noopener noreferrer">View Playlist</a> | 
+                    <a href="https://cmu-l3.github.io/anlp-fall2025/" target="_blank" rel="noopener noreferrer">Course Page</a>
+                </div>
+
+                <div class="resource-item" data-level="advanced">
+                    <div class="resource-badge-level">Advanced</div>
+                    <h4>Inference Algorithms for Language Modeling (11-664/763)</h4>
+                    <p class="resource-author">Carnegie Mellon University, Fall 2025</p>
+                    <p>Focused course on inference optimization techniques and test-time scaling. Perfect for understanding how to make LLMs faster and more efficient, a topic we'll cover extensively in the workshop.</p>
+                    <a href="https://www.youtube.com/watch?v=F-mduXzNcRQ" target="_blank" rel="noopener noreferrer">First Lecture</a> | 
+                    <a href="https://phontron.com/class/lminference-fall2025/" target="_blank" rel="noopener noreferrer">Course Page</a>
+                </div>
+
+                <div class="resource-item" data-level="intermediate">
+                    <div class="resource-badge-level">Intermediate</div>
+                    <h4>Deep Learning (CS230)</h4>
+                    <p class="resource-author">Stanford University, Fall 2025</p>
+                    <p>Build a strong foundation in deep learning concepts and applications. This course covers the fundamentals that underpin all modern LLMs. Recommended if you're new to deep learning.</p>
+                    <a href="https://www.youtube.com/watch?v=_NLHFoVNlbg&t=12s" target="_blank" rel="noopener noreferrer">First Lecture</a> | 
+                    <a href="https://cs230.stanford.edu/" target="_blank" rel="noopener noreferrer">Course Page</a>
+                </div>
+
+                <div class="resource-item" data-level="advanced">
+                    <div class="resource-badge-level">Advanced</div>
+                    <h4>A Practical Introduction to Diffusion Models (6.S183)</h4>
+                    <p class="resource-author">MIT, IAP 2025</p>
+                    <p>Explore diffusion models, another important class of generative AI models. Understanding these techniques provides broader context for generative AI beyond language models.</p>
+                    <a href="https://www.youtube.com/playlist?list=PL_1TbuIu65A_G908tHHvTnyQsueR17rMh" target="_blank" rel="noopener noreferrer">View Playlist</a> | 
+                    <a href="https://www.practical-diffusion.org/" target="_blank" rel="noopener noreferrer">Course Page</a>
+                </div>
+
+                <div class="resource-item" data-level="advanced">
+                    <div class="resource-badge-level">Advanced</div>
+                    <h4>An Introduction to Flow and Diffusion Models (6.S184)</h4>
+                    <p class="resource-author">MIT, IAP 2025</p>
+                    <p>Deep dive into flow and diffusion models with mathematical foundations. Advanced course for those interested in the theoretical aspects of generative models.</p>
+                    <a href="https://www.youtube.com/playlist?list=PL_1TbuIu65A9rac2dMLkvXvPS5YHtADRF" target="_blank" rel="noopener noreferrer">View Playlist</a> | 
+                    <a href="https://diffusion.csail.mit.edu/2026/index.html" target="_blank" rel="noopener noreferrer">Course Page</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- University Courses Section -->
-    <section class="section resources-alt">
+    <!-- Background Courses Section -->
+    <section class="section resources">
         <div class="container">
-            <h2 class="section-title">University Courses</h2>
-            <p class="section-intro">Structured learning paths from leading universities</p>
+            <h2 class="section-title">Background & Foundations</h2>
+            <p class="section-intro">Mathematical foundations for understanding LLMs</p>
             
             <div class="courses-section">
-                <h3 class="subsection-title">Large Language Models Courses</h3>
+                <h3 class="subsection-title">Linear Algebra</h3>
                 <div class="resource-list">
-                    <div class="resource-item">
-                        <h4>Transformers & LLMs</h4>
-                        <p class="resource-author">Stanford University - CME 295, Fall 2025</p>
-                        <p>A comprehensive course dedicated to transformer architectures and large language models. Covers both theoretical foundations and practical implementations, ideal for understanding the complete picture of modern LLMs.</p>
-                        <a href="https://cme295.stanford.edu/syllabus/" target="_blank" rel="noopener noreferrer">View Syllabus</a>
+                    <div class="resource-item" data-level="beginner">
+                        <div class="resource-badge-level">Beginner</div>
+                        <h4>Essence of Linear Algebra</h4>
+                        <p class="resource-author">3Blue1Brown</p>
+                        <p>Intuitive visual explanations of linear algebra concepts. Perfect for understanding the mathematical foundations behind neural networks and transformers.</p>
+                        <a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab" target="_blank" rel="noopener noreferrer">View Playlist</a>
                     </div>
 
-                    <div class="resource-item">
-                        <h4>Advanced Natural Language Processing</h4>
-                        <p class="resource-author">Carnegie Mellon University, Fall 2025</p>
-                        <p>Dive deeper into NLP with this advanced course. Features video lectures covering cutting-edge topics in natural language processing. Great for those who want to explore beyond the basics.</p>
-                        <a href="https://youtube.com/playlist?list=PLqC25OT8ZpD2-RuhyacIsODl5iJVgMjI3&si=uwqS16RBwHqN2BKA" target="_blank" rel="noopener noreferrer">View Course</a>
+                    <div class="resource-item" data-level="beginner">
+                        <div class="resource-badge-level">Beginner</div>
+                        <h4>Linear Algebra (18.06)</h4>
+                        <p class="resource-author">MIT OpenCourseWare</p>
+                        <p>Comprehensive introduction to linear algebra from MIT. Covers vectors, matrices, eigenvalues, and more - all essential for understanding deep learning.</p>
+                        <a href="https://www.youtube.com/playlist?list=PL221E2BBF13BECF6C" target="_blank" rel="noopener noreferrer">View Playlist</a> | 
+                        <a href="https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/" target="_blank" rel="noopener noreferrer">Course Page</a>
                     </div>
 
-                    <div class="resource-item">
-                        <h4>Inference Algorithms for Language Modeling</h4>
-                        <p class="resource-author">Carnegie Mellon University, Fall 2025</p>
-                        <p>Focused course on inference optimization techniques. Perfect for understanding how to make LLMs faster and more efficient, a topic we'll cover extensively in Day 2 of the workshop.</p>
-                        <a href="https://phontron.com/class/lminference-fall2025/" target="_blank" rel="noopener noreferrer">View Course</a>
+                    <div class="resource-item" data-level="intermediate">
+                        <div class="resource-badge-level">Intermediate</div>
+                        <h4>Matrix Methods in Data Analysis, Signal Processing, and Machine Learning (18.065)</h4>
+                        <p class="resource-author">MIT</p>
+                        <p>Advanced matrix methods with direct applications to machine learning. Covers singular value decomposition, principal component analysis, and optimization techniques.</p>
+                        <a href="https://www.youtube.com/playlist?list=PLUl4u3cNGP63oMNUHXqIUcrkS2PivhN3k" target="_blank" rel="noopener noreferrer">View Playlist</a> | 
+                        <a href="https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/" target="_blank" rel="noopener noreferrer">Course Page</a>
                     </div>
                 </div>
 
-                <h3 class="subsection-title">Machine Learning Foundations</h3>
+                <h3 class="subsection-title">Calculus</h3>
                 <div class="resource-list">
-                    <div class="resource-item">
-                        <h4>Deep Learning</h4>
-                        <p class="resource-author">Stanford University - CS 230, Fall 2025</p>
-                        <p>Build a strong foundation in deep learning concepts and applications. This course covers the fundamentals that underpin all modern LLMs. Recommended if you're new to deep learning.</p>
-                        <a href="https://cs230.stanford.edu/syllabus/" target="_blank" rel="noopener noreferrer">View Syllabus</a>
+                    <div class="resource-item" data-level="beginner">
+                        <div class="resource-badge-level">Beginner</div>
+                        <h4>Essence of Calculus</h4>
+                        <p class="resource-author">3Blue1Brown</p>
+                        <p>Visual intuition for calculus concepts. Essential for understanding gradients, derivatives, and the optimization algorithms used in training neural networks.</p>
+                        <a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr" target="_blank" rel="noopener noreferrer">View Playlist</a>
+                    </div>
+
+                    <div class="resource-item" data-level="intermediate">
+                        <div class="resource-badge-level">Intermediate</div>
+                        <h4>Matrix Calculus for Machine Learning and Beyond</h4>
+                        <p class="resource-author">MIT, IAP 2023</p>
+                        <p>Specialized course on matrix calculus with focus on machine learning applications. Covers gradients, Jacobians, and automatic differentiation.</p>
+                        <a href="https://www.youtube.com/playlist?list=PLUl4u3cNGP62EaLLH92E_VCN4izBKK6OE" target="_blank" rel="noopener noreferrer">View Playlist</a> | 
+                        <a href="https://ocw.mit.edu/courses/18-s096-matrix-calculus-for-machine-learning-and-beyond-january-iap-2023/" target="_blank" rel="noopener noreferrer">Course Page</a>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title">Probability & Statistics</h3>
+                <div class="resource-list">
+                    <div class="resource-item" data-level="beginner">
+                        <div class="resource-badge-level">Beginner</div>
+                        <h4>Probability for Computer Scientists (CS109)</h4>
+                        <p class="resource-author">Stanford University</p>
+                        <p>Essential probability concepts for computer science and machine learning. Covers distributions, random variables, and statistical inference.</p>
+                        <a href="https://www.youtube.com/playlist?list=PLoROMvodv4rOpr_A7B9SriE_iZmkanvUg" target="_blank" rel="noopener noreferrer">View Playlist</a> | 
+                        <a href="https://web.stanford.edu/class/archive/cs/cs109/cs109.1254/" target="_blank" rel="noopener noreferrer">Course Page</a>
+                    </div>
+
+                    <div class="resource-item" data-level="beginner">
+                        <div class="resource-badge-level">Beginner</div>
+                        <h4>Statistics 110: Probability</h4>
+                        <p class="resource-author">Harvard University</p>
+                        <p>Comprehensive introduction to probability theory. In-depth coverage of probability concepts with clear explanations and examples.</p>
+                        <a href="https://www.youtube.com/playlist?list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo" target="_blank" rel="noopener noreferrer">View Playlist</a> | 
+                        <a href="https://projects.iq.harvard.edu/stat110/home" target="_blank" rel="noopener noreferrer">Course Page</a>
                     </div>
                 </div>
             </div>

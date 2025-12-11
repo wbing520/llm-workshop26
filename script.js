@@ -206,6 +206,71 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('%cSCIPE Workshop on LLMs', 'color: #1a365d; font-size: 20px; font-weight: bold;');
     console.log('%cWebsite built with modern web standards', 'color: #4a5568; font-size: 12px;');
     console.log('Interested in the source? Check out our GitHub repository!');
+    
+    // Filter functionality for resources by difficulty level
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const resourceItems = document.querySelectorAll('.resource-item[data-level]');
+    
+    if (filterButtons.length > 0) {
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const filterValue = this.getAttribute('data-filter');
+                
+                // Update active button state
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Filter resources
+                resourceItems.forEach(item => {
+                    const itemLevel = item.getAttribute('data-level');
+                    
+                    if (filterValue === 'all') {
+                        item.classList.remove('hidden');
+                        // Animate items back in
+                        item.style.animation = 'fadeIn 0.5s ease';
+                    } else if (itemLevel === filterValue) {
+                        item.classList.remove('hidden');
+                        item.style.animation = 'fadeIn 0.5s ease';
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+                
+                // Smooth scroll to first visible item after filtering
+                setTimeout(() => {
+                    const firstVisible = document.querySelector('.resource-item:not(.hidden)');
+                    if (firstVisible && filterValue !== 'all') {
+                        const navbar = document.querySelector('.navbar');
+                        const navbarHeight = navbar ? navbar.offsetHeight : 0;
+                        const filterSection = document.querySelector('.filter-section');
+                        const filterHeight = filterSection ? filterSection.offsetHeight : 0;
+                        const targetPosition = firstVisible.getBoundingClientRect().top + window.pageYOffset - navbarHeight - filterHeight - 40;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                }, 100);
+            });
+        });
+        
+        // Add keyboard support for filter buttons
+        filterButtons.forEach((button, index) => {
+            button.addEventListener('keydown', function(e) {
+                if (e.key === 'ArrowRight' && filterButtons[index + 1]) {
+                    e.preventDefault();
+                    filterButtons[index + 1].focus();
+                } else if (e.key === 'ArrowLeft' && filterButtons[index - 1]) {
+                    e.preventDefault();
+                    filterButtons[index - 1].focus();
+                } else if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.click();
+                }
+            });
+        });
+    }
 });
 
 // Add CSS for keyboard navigation focus styles
