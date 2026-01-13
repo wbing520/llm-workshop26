@@ -199,6 +199,22 @@ body {
     box-shadow: var(--shadow-md);
 }
 
+/* Announcement Banner */
+.announcement {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    border-left: 6px solid #d97706;
+    padding: 2rem 0;
+    box-shadow: var(--shadow-md);
+}
+
+.announcement p {
+    color: #78350f;
+    font-weight: 600;
+    margin: 0;
+    font-size: 1.125rem;
+    text-align: center;
+}
+
 .cta-button:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
