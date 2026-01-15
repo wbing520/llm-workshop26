@@ -331,6 +331,28 @@ body {
 }
 
 /* Schedule Section */
+.schedule-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.schedule-header * {
+    margin-top: 0 !important;
+    margin-bottom: 0;
+    width: 33.3%;
+}
+
+.schedule-button-container {
+    display: flex;
+    justify-content: right;
+}
+
+.schedule-button-container a {
+    width: fit-content;
+}
+
 .schedule-day {
     margin-bottom: 4rem;
     background-color: var(--bg-primary);
@@ -754,6 +776,12 @@ body {
 
     .partner-logo {
         height: 50px;
+    }
+
+    .schedule-header {
+        flex-direction: column;
+        gap: 0.25rem;
+        margin-bottom: 1rem;
     }
 }
 
